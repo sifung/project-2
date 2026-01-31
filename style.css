@@ -1,20 +1,20 @@
 :root {
-    --primary-color: #6d8b74; /* Soft sage green */
-    --secondary-color: #5b7b7a; /* Muted teal */
-    --accent-color: #d0b8a8; /* Warm beige */
-    --text-color: #4a4a4a; /* Soft black */
+    --primary-color: #0886e7; 
+    --secondary-color: #5b677b;
+    --accent-color: #a8a8d0;
+    --text-color: #4a4a4a;
     --light-bg: #f5f5f5;
     --white: #ffffff;
-    --shadow: 0 4px 15px rgba(0,0,0,0.05);
+    --shadow: 0 4px 15px rgba(204, 7, 7, 0.05);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --subtle-bg: url('https://www.transparenttextures.com/patterns/rice-paper-2.png');
 }
 
-/* Dark mode adjustments */
+
 .dark-mode {
-    --primary-color: #88b394; /* Lighter sage */
-    --secondary-color: #6d9b9a; /* Lighter teal */
-    --accent-color: #e2cdbc; /* Lighter beige */
+    --primary-color: #8899b3; 
+    --secondary-color: #6d869b;
+    --accent-color: #e2cdbc;
     --text-color: #e0e0e0;
     --light-bg: #2a2a2a;
     --white: #3a3a3a;
@@ -25,7 +25,6 @@ body {
     background-attachment: fixed;
 }
 
-/* Navigation Styles */
 .main-nav {
     background: var(--white);
     box-shadow: var(--shadow);
@@ -95,7 +94,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Dark Mode Styles */
 .dark-mode {
     --text-color: #e5e7eb;
     --light-bg: #111827;
@@ -116,7 +114,6 @@ body {
     color: #e5e7eb;
 }
 
-/* Base Styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
@@ -127,7 +124,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Styles */
 header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -179,7 +175,6 @@ h1 {
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Main Content Styles */
 main {
     max-width: 800px;
     margin: -10px auto 2rem;
@@ -187,7 +182,6 @@ main {
     position: relative;
 }
 
-/* Improved section styling for better readability */
 section {
     background: rgba(255,255,255,0.95);
     padding: 1.8rem;
@@ -200,21 +194,18 @@ section {
     line-height: 1.8;
 }
 
-/* Better spacing and readability */
 p, li {
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* Larger tap targets */
 a, button {
     padding: 0.5rem;
     min-width: 48px;
     min-height: 48px;
 }
 
-/* Better form input styling */
 input, textarea, select {
     font-size: 1rem;
     padding: 0.8rem;
@@ -224,7 +215,6 @@ input, textarea, select {
     margin-bottom: 1rem;
 }
 
-/* Enhanced focus states for accessibility */
 a:focus, button:focus, input:focus {
     outline: 2px solid var(--accent-color);
     outline-offset: 2px;
@@ -279,7 +269,6 @@ li::before {
     font-size: 1.5rem;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 2rem;
@@ -293,7 +282,6 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -308,9 +296,7 @@ section:nth-child(2) { animation-delay: 0.2s; }
 section:nth-child(3) { animation-delay: 0.3s; }
 section:nth-child(4) { animation-delay: 0.4s; }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    /* Improved mobile typography */
     html {
         font-size: 15px;
     }
@@ -328,8 +314,7 @@ section:nth-child(4) { animation-delay: 0.4s; }
     h2 {
         font-size: 1.5rem;
     }
-    
-    /* Better mobile layout */
+
     main {
         margin: 0 auto 1rem;
         padding: 0 1rem;
@@ -341,7 +326,6 @@ section:nth-child(4) { animation-delay: 0.4s; }
         border-radius: 12px;
     }
     
-/* Mobile navigation */
 .nav-content {
     padding: 0.8rem 1rem;
     flex-wrap: wrap;
@@ -354,7 +338,6 @@ section:nth-child(4) { animation-delay: 0.4s; }
     margin-top: 0.5rem;
 }
 
-/* Hamburger menu for smallest screens */
 @media (max-width: 400px) {
     .nav-links {
         display: none;
@@ -376,33 +359,27 @@ section:nth-child(4) { animation-delay: 0.4s; }
     }
 }
     
-    /* Improved touch targets */
     a, button {
         min-width: 44px;
         min-height: 44px;
     }
     
-    /* Mobile-first form elements */
     input, textarea, select {
         font-size: 1rem;
         padding: 0.8rem;
     }
-    
-    /* Project grid adjustments */
+
     .project-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
-    /* Social icons spacing */
     .social-icons {
         gap: 0.8rem;
     }
 }
 
-/* Additional mobile optimizations */
 @media (max-width: 480px) {
-    /* Even smaller screens */
     .profile-img {
         width: 100px;
         height: 100px;
@@ -417,7 +394,6 @@ section:nth-child(4) { animation-delay: 0.4s; }
         font-size: 0.9rem;
     }
     
-    /* Stacked layout for filters */
     .project-filters {
         flex-direction: column;
         align-items: center;
@@ -429,7 +405,6 @@ section:nth-child(4) { animation-delay: 0.4s; }
     }
 }
 
-/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -474,7 +449,6 @@ section:nth-child(4) { animation-delay: 0.4s; }
     box-shadow: 0 5px 15px rgba(208,184,168,0.3);
 }
 
-/* Projects Section */
 .projects {
     padding: 2rem;
 }
